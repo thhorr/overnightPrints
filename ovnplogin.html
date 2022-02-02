@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <title>Login-OvernightPrints Connect</title>
+
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+.main{
+    border: 1px solid rgb(211, 205, 205);
+    width: 600px;
+    height: 420px;
+  margin: 150px  auto;
+  border-radius: 3px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.line{
+    width: 560px;
+    border: .1px solid rgb(230, 228, 228);
+    margin: 15px auto;
+   
+}
+
+.email-div-1,.email-div-2{
+     width: 450px;
+    height: 25px;
+    border: .5px solid rgb(180, 176, 176) ;
+   padding: 5px;
+   border-radius: 3px;
+   margin-left: 10px;
+}
+
+.email-img-1,.email-img-2{
+width: 20px;
+height: 20px;
+}
+
+.email-1,.email-2{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.forgot span{
+    color: #01aee4;
+}
+
+.forgot{
+    margin-left: 90px;
+}
+
+.login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: #C70607;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.login-btn button{
+   background-color: #C70607;
+    font-size: large;
+    border: none;
+    color: white;
+}
+
+.lw span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fblogo img{
+    width: 35px;
+  height: 35px;
+}
+
+
+.fblogo{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.new{
+    margin-left: 90px;
+}
+
+.new p>span{
+    color: #01aee4;
+    
+}
+
+.new p>span:hover,.forgot span:hover{
+    color: #239abe;
+}
+
+
+    </style>
+
+
+    <body>
+        <div class="main">
+            <div class="logo">
+                <img src="https://connect.overnightprints.com/images/onp_logo.png">
+            </div>
+
+            <div class="line"></div>
+
+            <form onsubmit="startLogin(event)" id="loginForm">
+            <div class="email-1">
+                <div class="email-img-1">
+                    <img src="img\envelope-regular.svg">
+                </div>
+                <input  id="email" type="email" class="email-div-1" placeholder="Email" required>
+            </div>
+
+            <div class="email-2">
+                <div class="email-img-2">
+                    <img src="img\key-solid.svg">
+                </div>
+                <input  id="password" type="password" class="email-div-2" placeholder="Password" required>
+            </div>
+
+            <div class="forgot">
+                <span>Forgot Password?</span>
+            </div>
+
+            <div class="login-btn">
+                <button>Login</button>
+            </div>
+            </form>
+
+            <div class="lw">
+                <span>Or Login with</span>
+            </div>
+
+            <div class="fblogo">
+                <img src="img\icons8-facebook.svg">
+            </div>
+            
+            <div class="new">
+                <p>New?<span>Create New Account</span></p>
+            </div>
+        </div>
+    </body>
+
+
+    <script>
+         // Login Admins
+            const admins = [
+                {
+                    fullName: "Yogendra",
+                    email: "yogendra@gmail.com",
+                    password: "yogendra123",
+                }
+            ];
+
+            if (localStorage.getItem("admins") == null) {
+                    localStorage.setItem("admins", JSON.stringify(admins));
+                }
+
+                //Login Function
+
+                function startLogin(e) {
+                    e.preventDefault();
+                    const form = document.getElementById("loginForm");
+                    //  step 1 = getting the data
+                    const username = form.email.value;
+                    const password = form.password.value;
+
+                    // step 2 = checking the data
+                    const admins = JSON.parse(localStorage.getItem("admins"));
+                    let flag = false;
+                    for (let i = 0; i < admins.length; i++) {
+                        let u = admins[i].email;
+                        let p = admins[i].password;
+                        if (u === username && p === password) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag) {
+                        window.location.href = "ovnp.html";
+                    }
+                }
+
+
+                var to_register_page = document.querySelector('.new');
+
+
+                to_register_page.addEventListener('click', function () {
+                        window.location.href = "ovnpregister.html"
+                    });
+    </script>
+</html>

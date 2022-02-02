@@ -1,0 +1,435 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav start*/
+.nav_div {
+  background-color: #061c38;
+  height: 115px;
+}
+
+.logo_text img {
+  width: 21%;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.nav_list {
+  display: flex;
+  color: white;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: content-box;
+  width: 55%;
+}
+
+.nav_list li {
+  display: flex;
+  align-items: center;
+}
+
+.nav_list li > img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.login {
+  display: flex;
+  flex-direction: row-reverse;
+  box-sizing: content-box;
+  width: 90%;
+  margin-top: -70px;
+  color: white;
+}
+
+.login:hover {
+  color: orange;
+}
+
+.cart_txt {
+  color: white;
+}
+
+.cart_divv {
+  background-color: #01aee4;
+  display: flex;
+  width: 80px;
+  height: 20px;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 4px;
+  margin-left: 1390px;
+  margin-top: -30px;
+}
+
+.cart_divv img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+/* nav end*/
+
+.main-img {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* shopper approved bar start*/
+.shopper-approved {
+  align-items: center;
+  background-color: #3e3e3f;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  font-family: Lato, Tahoma;
+  justify-content: flex-start;
+  line-height: 22px;
+  margin: 10px 0;
+  height: 50px;
+  padding: 5px 0;
+  font-size: 14px;
+  width: 86%;
+  margin-left: 110px;
+}
+
+.ratings-value {
+  color: white;
+  font-size: 150%;
+}
+
+.fas {
+  color: orange;
+}
+
+.ratings {
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-rating {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+  line-height: 115%;
+}
+
+.rati {
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-basis: 300px;
+  margin: 0 0 0 auto;
+  padding: 10px 15px 5px 0;
+  max-width: 100%;
+}
+
+/* shopper approved bar end*/
+
+/*covid-content start*/
+
+.covid-content h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.covid-content h3 > a {
+  color: #551a8b;
+  text-decoration: underline;
+}
+/*covid-content start*/
+
+/*best sellers start*/
+
+.best-sellers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+}
+
+.bs-span {
+  width: 430px;
+  height: 2px;
+  color: #3e3e3f;
+  border-top: 1px solid #3e3e3f;
+}
+
+.best-sellers h3 {
+  font-size: 34px;
+  color: #737375;
+}
+/*best sellers end*/
+
+/*16 cards start*/
+
+.c {
+  border: 0.1px solid rgb(212, 203, 203);
+  width: 310px;
+  text-align: center;
+  height: max-content;
+  margin-bottom: 40px;
+}
+
+.c:hover {
+  box-shadow: 0px 0px 20px rgb(212, 203, 203);
+}
+
+.c span {
+  background-color: #01aee3;
+  width: 110px;
+  height: 20px;
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  top: 10px;
+}
+
+.c span:hover {
+  background-color: #25aad3;
+}
+
+.c p {
+  padding: 5px;
+  margin-top: -12px;
+}
+
+.c h3 {
+  color: #737375;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.all-cards {
+  margin-left: 105px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70%;
+  gap: 25px;
+  margin-top: 25px;
+}
+/*16 cards start*/
+
+/*twitter and likes start*/
+
+.fab,
+.far {
+  color: #fff;
+}
+
+.t-symbol span,
+.like span {
+  font-size: small;
+  color: #fff;
+}
+
+.t-symbol {
+  background-color: #1b95e0;
+  width: max-content;
+  height: 15px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.like {
+  margin-left: 16px;
+  width: max-content;
+  height: 15px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #1877f2;
+}
+
+.tl {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*twitter and likes end*/
+
+.hd {
+  font-family: Lato, Tahoma;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 25px;
+  font-size: x-large;
+}
+
+/* text start*/
+
+.all-txt div > p {
+  margin-top: -23px;
+}
+
+.all-txt div > h4 {
+  font-size: large;
+}
+
+.all-txt div {
+  margin-bottom: -10px;
+}
+
+.all-txt {
+  margin-left: 105px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+/* text end*/
+
+/*footer start*/
+
+.footer {
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 540px;
+  margin-top: 60px;
+}
+
+/*f-sub-1 start*/
+
+.line {
+  width: 300px;
+  height: 2px;
+  border-top: 1px solid #acacac;
+}
+
+.about-us h3,
+.about-us p,
+.support h3,
+.support p,
+.sites h3,
+.sites p,
+.resources h3,
+.resources p {
+  margin-top: -10px;
+}
+
+.about-us,
+.support,
+.sites,
+.resources {
+  margin-top: 20px;
+}
+
+.line ~ h3 {
+  margin-top: 8px;
+  color: #01bae3;
+}
+
+.f-sub-1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 45px;
+}
+
+.f-sub-1 p {
+  color: #777789;
+}
+
+/*f-sub-1 end*/
+
+/*f-sub-2 start*/
+
+.line1 {
+  width: 650px;
+  height: 2px;
+  border-top: 1px solid #acacac;
+}
+
+.s-img-1,
+.s-img-2,
+.s-img-3,
+.s-img-4,
+.s-img-5,
+.s-img-6 {
+  width: 35px;
+  height: 35px;
+}
+
+.social-img {
+  display: flex;
+  margin-top: -15px;
+}
+
+.copyright {
+  margin-top: 50px;
+}
+
+.f-sub-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 45px;
+}
+
+.weekly-deals {
+  margin-left: -50px;
+}
+
+.input {
+  width: 250px;
+  height: 22px;
+  padding: 5px;
+  border: none;
+}
+
+.ip {
+  margin-top: -10px;
+}
+
+input:hover {
+  border: 1px solid #01bae3;
+}
+
+.caret {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+  filter: brightness(0) invert(1);
+}
+
+.subs {
+  display: flex;
+  width: 150px;
+  height: 16px;
+  padding: 8px;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #01aee3;
+}
+
+.subs span {
+  color: white;
+}
+
+.copyright span {
+  color: #777789;
+}
+
+.weekly-deals,
+.social {
+  color: #01bae3;
+}
+
+/*f-sub-2 end*/
+
+/*footer end*/

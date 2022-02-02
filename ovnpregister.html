@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <title>Register-OvernightPrints Connect</title>
+
+    <style>
+            body{
+            margin: 0;
+            padding: 0;
+        }
+.main{
+    border: 1px solid rgb(211, 205, 205);
+    width: 600px;
+    height: 530px;
+  margin: 120px  auto;
+  border-radius: 3px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.line{
+    width: 560px;
+    border: .1px solid rgb(230, 228, 228);
+    margin: 15px auto;
+   
+}
+
+.email-div1,.email-div2,.email-div3,.fn-div,.ln-div{
+     width: 450px;
+    height: 25px;
+    border: .5px solid rgb(180, 176, 176) ;
+   padding: 5px;
+   border-radius: 3px;
+   margin-left: 10px;
+}
+
+.email-img1,.email-img2,.email-img3,.fn-img,.ln-img{
+width: 20px;
+height: 20px;
+}
+
+.email1,.email2,.email3,.first-name,.last-name{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.create-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: 40px;
+    background-color: #C70607;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 84px;
+}
+
+.cancel{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 84px;
+    border: 1px solid black;
+}
+
+.create-account span{
+    color: white;
+    font-size: large;
+}
+
+.cancel span{
+ color: rgb(211, 182, 182);
+    font-size: large;
+}
+
+.cancel:hover{
+background-color: grey;
+
+}
+    </style>
+
+    <body>
+        <div class="main">
+            <div class="logo">
+                <img src="https://connect.overnightprints.com/images/onp_logo.png">
+            </div>
+        
+            <div class="line"></div>
+        
+            <div class="email1">
+                <div class="email-img1">
+                    <img src="img\envelope-regular.svg">
+                </div>
+                <input class="email-div1" placeholder="Email" required>
+            </div>
+        
+            <div class="email2">
+                <div class="email-img2">
+                    <img src="img\key-solid.svg">
+                </div>
+                <input type="password" class="email-div2" placeholder="Password" required>
+            </div>
+
+            <div class="email3">
+                <div class="email-img3">
+                    <img src="img\key-solid.svg">
+                </div>
+                <input type="password" class="email-div3" placeholder="Verify Password" required>
+            </div>
+
+            <div class="first-name">
+                <div class="fn-img">
+                    <img src="img\user-solid.svg">
+                </div>
+                <input class="fn-div" placeholder="First Name" required>
+            </div>
+
+            <div class="last-name">
+                <div class="ln-img">
+                    <img src="img\user-solid.svg">
+                </div>
+                <input class="ln-div" placeholder="Last Name" required>
+            </div>
+
+            <div class="create-account">
+                <span>Create An Account</span>
+            </div>
+
+            <div class="cancel">
+                <span>Cancel</span>
+            </div>
+
+        </div>
+    </body>
+
+    <script>
+        var create_account = document.querySelector('.create-account');
+
+        create_account.addEventListener('click',function (){
+            alert('You Have Successfully Created Your Account.Press Cancel to Login');
+        });
+
+        var cancel = document.querySelector('.cancel');
+
+         cancel.addEventListener('click', function () {
+                window.location.href = "ovnplogin.html"
+            });
+
+    </script>
+</html>

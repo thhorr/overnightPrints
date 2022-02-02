@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav start*/
+.nav_div {
+  background-color: #061c38;
+  height: 115px;
+}
+
+.logo_text img {
+  width: 21%;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.nav_list {
+  display: flex;
+  color: white;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: content-box;
+  width: 55%;
+}
+
+.nav_list li {
+  display: flex;
+  align-items: center;
+}
+
+.nav_list li > img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.login {
+  display: flex;
+  flex-direction: row-reverse;
+  box-sizing: content-box;
+  width: 90%;
+  margin-top: -70px;
+  color: white;
+}
+
+.login:hover {
+  color: orange;
+}
+
+.cart_txt {
+  color: white;
+}
+
+.cart_divv {
+  background-color: #01aee4;
+  display: flex;
+  width: 80px;
+  height: 20px;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 4px;
+  margin-left: 1410px;
+  margin-top: -30px;
+}
+
+.cart_divv img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+/* nav end*/
+
+.main-img {
+  margin-top: 10px;
+  display: flex;
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  background-image: url("product-sticker.jpg");
+}
+
+.main-img-div {
+  width: 150px;
+  height: 40px;
+  background-color: #c70607;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img-div span {
+  font-size: large;
+  color: white;
+}
